@@ -8,6 +8,10 @@ var b float32 // Zero value = 0.0
 var c bool    // Zero value = false
 var d string  // Zero value = ""
 
+type newType int
+
+var e newType = 100
+
 func main() {
 	y := 43 // Short declaration operator within function body
 
@@ -18,5 +22,6 @@ func main() {
 	fmt.Printf("%T\n", b)
 	fmt.Printf("%T\n", c)
 	fmt.Printf("%T\n", d)
+	fmt.Printf("%T\n", e)
 
 }
