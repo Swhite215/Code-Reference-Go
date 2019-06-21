@@ -14,3 +14,12 @@ Go - The Google Programming Language
   3. Commands
     a. Essentials
       - go get, package management
+      - go run file, executes a file
+      - go version, returns go version
+      - go build
+        - executable, builds the file, reports errors
+        - package, builds the file, reports errors, throws away binary
+      - go install
+        - executable, compiles the program, names executable, puts executable in workspace/bin
+        - packes, compiles the package, puts executable in workspace/pkg
+      - go fmt, automatically formats code
