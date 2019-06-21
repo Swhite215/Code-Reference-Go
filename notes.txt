@@ -1,0 +1,16 @@
+Go - The Google Programming Language
+  1. Workspace
+    a. One folder, any name, any location
+      - bin, binaries
+      - pkg, archived files
+      - src, name spacing, package management
+        - github.com
+          - username
+            - folder with code project/repo
+  2. Environment 
+    a. ENV
+      - GOPATH, points to your go workspace
+      - GOROOT, points to your binary installation of Go
+  3. Commands
+    a. Essentials
+      - go get, package management
