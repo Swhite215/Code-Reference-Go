@@ -12,4 +12,11 @@ func main() {
 	y := 43 // Short declaration operator within function body
 
 	fmt.Println(x + y)
+
+	// Printing types
+	fmt.Printf("%T\n", a)
+	fmt.Printf("%T\n", b)
+	fmt.Printf("%T\n", c)
+	fmt.Printf("%T\n", d)
+
 }
