@@ -59,7 +59,24 @@ func main() {
         fmt.Println(num, "has 1 digit")
     } else {
         fmt.Println(num, "has multiple digits")
-    }
+	}
+	
+	//Conditional - #5
+	d := 5
+	switch d {
+	case 1:
+		fmt.Println("D is 1!")
+	case 2:
+		fmt.Println("D is 2!")
+	case 3:
+		fmt.Println("D is 3!")
+	case 4:
+		fmt.Println("D is 4!")
+	case 5:
+		fmt.Println("D is 5!")
+	default:
+		fmt.Println("D is not 1 - 5!")
+	}
 	
 }
 
