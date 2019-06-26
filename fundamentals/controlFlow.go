@@ -68,10 +68,8 @@ func main() {
 		fmt.Println("D is 1!")
 	case 2:
 		fmt.Println("D is 2!")
-	case 3:
-		fmt.Println("D is 3!")
-	case 4:
-		fmt.Println("D is 4!")
+	case 3, 4:
+		fmt.Println("D is 3 or 4!")
 	case 5:
 		fmt.Println("D is 5!")
 	default:
