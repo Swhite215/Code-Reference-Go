@@ -49,5 +49,4 @@ func main() {
 
 	identity(sa1)
 	identity(r1)
-
 }
