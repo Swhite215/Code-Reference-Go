@@ -10,7 +10,7 @@ func difference(a, b int) int {
 	return a - b
 }
 
-func product(a, b int) int{
+func product(a, b int) int {
 	return a * b
 }
 
@@ -37,7 +37,7 @@ func main() {
 
 	final := variadicFunc(10, 20, 30, 40, 50)
 	defer fmt.Println(final)
-	
+
 	fmt.Println("This is the function script!")
 
 	fmt.Println(sum(1, 2))
@@ -51,12 +51,17 @@ func main() {
 	_, b := multipleReturn()
 	fmt.Println(b)
 
-	sum := variadicFunc(1,2,3,4,5)
+	sum := variadicFunc(1, 2, 3, 4, 5)
 
 	fmt.Println(sum)
 
-	xi := []int{1,2,3,4,5}
+	xi := []int{1, 2, 3, 4, 5}
 	sumTwo := variadicFunc(xi...)
 
 	fmt.Println(sumTwo)
+
+	// Annonymous Functions
+	func(x int) {
+		fmt.Println("Testing annoynmous", x)
+	}(100)
 }
