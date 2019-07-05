@@ -33,6 +33,13 @@ func variadicFunc(nums ...int) int {
 	return sum
 }
 
+// Returning a Function / Closure
+func multiplyBy(x int) func(y int) int {
+	return func(y int) int {
+		return x * y
+	}
+}
+
 func main() {
 
 	final := variadicFunc(10, 20, 30, 40, 50)
@@ -64,4 +71,18 @@ func main() {
 	func(x int) {
 		fmt.Println("Testing annoynmous", x)
 	}(100)
+
+	// Func Expressions
+	f := func() {
+		fmt.Println("My first func expression")
+	}
+	f()
+
+	// Returning a Function / Closure
+	multiplyByThree := multiplyBy(3)
+
+	newValue := multiplyByThree(5)
+
+	fmt.Println(newValue)
+
 }
