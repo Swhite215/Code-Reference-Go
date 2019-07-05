@@ -40,6 +40,15 @@ func multiplyBy(x int) func(y int) int {
 	}
 }
 
+func callBackMultiplication(x int, y int, f func(z int)) {
+	product := x * y
+	f(product)
+}
+
+func printProduct(z int) {
+	fmt.Println(z)
+}
+
 func main() {
 
 	final := variadicFunc(10, 20, 30, 40, 50)
@@ -84,5 +93,8 @@ func main() {
 	newValue := multiplyByThree(5)
 
 	fmt.Println(newValue)
+
+	// Callback
+	callBackMultiplication(3, 10, printProduct)
 
 }
