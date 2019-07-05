@@ -49,6 +49,14 @@ func printProduct(z int) {
 	fmt.Println(z)
 }
 
+// Recursion
+func factorial(x int) int {
+	if x == 0 {
+		return 1
+	}
+	return x * factorial(x-1)
+}
+
 func main() {
 
 	final := variadicFunc(10, 20, 30, 40, 50)
@@ -97,4 +105,6 @@ func main() {
 	// Callback
 	callBackMultiplication(3, 10, printProduct)
 
+	// Recursion
+	fmt.Println(factorial(5))
 }
