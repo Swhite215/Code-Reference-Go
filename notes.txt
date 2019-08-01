@@ -23,3 +23,6 @@ Go - The Google Programming Language
         - executable, compiles the program, names executable, puts executable in workspace/bin
         - packes, compiles the package, puts executable in workspace/pkg
       - go fmt, automatically formats code
+  4. Production
+    a. Order
+      - go build to create executable, sftp to host, run executable
