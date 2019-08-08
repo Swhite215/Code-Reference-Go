@@ -1,5 +1,9 @@
 package main
 
+import (
+    "fmt"
+    "os"
+)
 // Function Using Defer to Ensure Files Are Closed
 func CopyFile(dstName, srcName string) (written int64, err error) {
     src, err := os.Open(srcName)
