@@ -59,4 +59,10 @@ func main() {
 	}
 
 	fmt.Println(annonymous)
+	
+	
+	personThree := person{firstName: "Not Pointer", lastName: "Person", age: 0}
+	personPointer := &personThree
+	personPointer.firstName = "Pointer"
+	fmt.Println(personThree)
 }
