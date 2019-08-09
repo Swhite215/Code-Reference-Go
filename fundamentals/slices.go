@@ -22,6 +22,7 @@ func main() {
 	fmt.Println(y)
 	fmt.Println(z)
 
+	// Dynamic Size Array (Slice)
 	c := make([]string, 10, 13)
 
 	c[0] = "Person 1"
