@@ -11,6 +11,11 @@ type Job struct {
 	Logger *log.Logger
 }
 
+type JobTwo struct {
+	Command string
+	*log.Logger
+}
+
 func main() {
 
 	fmt.Println(log.Ltime) // 2
@@ -23,8 +28,8 @@ func main() {
 
 
 	job := &Job{"Stdout Logger Demo", log.New(os.Stdout, "Tranquility's Genesis: ", 1 | 16)}
-	jobTwo := &Job{"Stderr Logger Demo", log.New(os.Stderr, "Error: ", log.Ltime)}
+	jobTwo := &JobTwo{"Stderr Logger Demo", log.New(os.Stderr, "Error: ", log.Ltime)}
 	
 	job.Logger.Print("Go to your destiny!")
-	jobTwo.Logger.Print("File not found!")
+	jobTwo.Print("File not found!")
 }
