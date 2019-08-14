@@ -15,6 +15,9 @@ func main() {
 
 	fmt.Println(b)
 	
+	// Implicit Length
+	c := [...]string{"hello", "world"}
+	
 	
 	for index, value := range b {
 		fmt.Println(index, value)
