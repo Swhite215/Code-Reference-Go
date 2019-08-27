@@ -1,0 +1,37 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(
+
+		strings.Contains("Test", "es"), // true
+
+		strings.Count("Test", "t"), // 1
+
+		strings.HasPrefix("Test", "Te"), // true
+
+		strings.HasSuffix("Test", "st"), // true
+
+		strings.Index("Test", "e"), // 1
+
+		strings.Join([]string{"a", "b"}, "-"), // "a-b"
+
+		strings.Repeat("Ace", 2), // AceAce
+
+		strings.Replace("aaaa", "a", "b", 3), // bbba
+
+		strings.Split("a-b-c-d-e", "-"), // []string{"a","b","c","d","e"}
+
+		strings.ToLower("TEST"), // test
+
+		strings.ToUpper("test"), // TEST
+	)
+
+	arr := []byte("test")
+
+	fmt.Println(arr)
+}
